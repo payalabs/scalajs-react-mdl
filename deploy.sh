@@ -1,6 +1,12 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
+# Add deploy key
+openssl aes-256-cbc -K $encrypted_4b0103a8caa4_key -iv $encrypted_4b0103a8caa4_iv -in .travisdeploykey.enc -out .travisdeploykey -d
+chmod go-rwx .travisdeploykey
+eval `ssh-agent -s`
+ssh-add .travisdeploykey
+
 sbt makeSite
 
 # go to the out directory and create a *new* Git repo
