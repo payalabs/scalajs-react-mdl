@@ -32,29 +32,33 @@ object Example extends js.JSApp {
           ),
           all.main(className := "mdl-layout__content")(
             div(className := "mdl-grid")(
-              div(className := "mdl-cell mdl-cell--4-col"),
-              div(className := "mdl-cell mdl-cell--4-col")(
-                h1("FAB with ripple"),
+              div(className := "mdl-cell mdl-cell--2-col"),
+              div(className := "mdl-cell mdl-cell--8-col")(
+                h1(
+                  "Examples components using ",
+                  a(href := "http://github.com/payalabs/scalajs-react-mdl")("scalajs-react-mdl")
+                ),
+                h2("FAB with ripple"),
                 button(className := "mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored")(
                   i(className := "material-icons")("add")
                 ).material,
-                h1("Accent colored button with ripple"),
+                h2("Accent colored button with ripple"),
                 button(className := "mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent")(
                   "I am a button"
                 ).material,
-                h1("Indeterminate progress bar"),
+                h2("Indeterminate progress bar"),
                 div(className := "mdl-progress mdl-js-progress mdl-progress__indeterminate progress-demo").material,
-                h1("Default spinner"),
+                h2("Default spinner"),
                 div(className := "mdl-spinner mdl-js-spinner is-active").material,
-                h1("Slider"),
+                h2("Slider"),
                 input(className := "mdl-slider mdl-js-slider", `type` := "range",
                   "min".reactAttr := "0", "max".reactAttr := "100").material,
-                h1("Numeric textfield with floating label"),
+                h2("Numeric textfield with floating label"),
                 div(className := "mdl-textfield mdl-js-textfield mdl-textfield--floating-label", width := "100px")(
                   input(className := "mdl-textfield__input", `type` := "number", id := "sample-textfield-number"),
                   label(className := "mdl-textfield__label", `for` := "sample-textfield-number")("Number...")
                 ).material,
-                h1("Email textfield with floating label"),
+                h2("Email textfield with floating label"),
                 div(className := "mdl-textfield mdl-js-textfield mdl-textfield--floating-label", width := "100px")(
                   input(className := "mdl-textfield__input", `type` := "email", id := "sample-textfield-email"),
                   label(className := "mdl-textfield__label", `for` := "sample-textfield-email")("Email..."),
