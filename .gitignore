@@ -1,0 +1,12 @@
+target/
+.cache
+.classpath
+.project
+.settings/
+.idea/
+bower_components/
+node_modules/
+.DS_Store
+project/project
+.travisdeploykey
+.travisdeploykey.pub

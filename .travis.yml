@@ -1,0 +1,8 @@
+language: scala
+install:
+scala:
+   - 2.11.7
+script:
+  - sbt test
+after_success:
+  - 'if [[ $TRAVIS_PULL_REQUEST == "false" ]]; then bash ./deploy.sh; fi'
