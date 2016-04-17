@@ -3,14 +3,14 @@ enablePlugins(ScalaJSPlugin)
 organization := "com.payalabs"
 name := "scalajs-react-mdl"
 
-version := "0.1.0-SNAPSHOT"
+version := "0.2.0-SNAPSHOT"
 
 scalaVersion := "2.11.7"
 
 jsDependencies += RuntimeDOM
 
-libraryDependencies += "com.github.japgolly.scalajs-react" %%% "core" % "0.9.0"
-jsDependencies += "org.webjars" % "react" % "0.13.3" / "react-with-addons.js" minified "react-with-addons.min.js" commonJSName "React"
+libraryDependencies += "com.github.japgolly.scalajs-react" %%% "core" % "0.11.0"
+jsDependencies += "org.webjars.bower" % "react" % "15.0.1" / "react-with-addons.js" minified "react-with-addons.min.js" commonJSName "React"
 
 lazy val root = project.in(file("."))
 lazy val examples = project.settings(

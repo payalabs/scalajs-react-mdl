@@ -1,7 +1,6 @@
 package com.payalabs.scalajs.react
 
 import japgolly.scalajs.react.{TopNode, ReactComponentU}
-import japgolly.scalajs.react.vdom.ReactTag
 import japgolly.scalajs.react.vdom.all._
 
 package object mdl {
