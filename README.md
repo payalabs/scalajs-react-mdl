@@ -12,7 +12,7 @@ An easy way to use JavaScript dependent [MDL](http://getmdl.io) components with 
 
 3. Add the following dependency to your scalajs-react project
  ```scala
- libraryDependencies += "com.payalabs" %%% "scalajs-react-mdl" % "0.1.0-SNAPSHOT"
+ libraryDependencies += "com.payalabs" %%% "scalajs-react-mdl" % "0.2.0-SNAPSHOT"
  ```
 
 ## Using an MDL component
