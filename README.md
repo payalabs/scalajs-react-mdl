@@ -18,6 +18,8 @@ An easy way to use JavaScript dependent [MDL](http://getmdl.io) components with 
 ## Using an MDL component
 Write the normal ReactTag for whichever MDL component you would like to use and call `.material` at the end:
 ```scala
+import com.payalabs.scalajs.react.mdl.MaterialAble
+
 div(className := "mdl-button mdl-js-button mdl-button--fab mdl-button--colored")(
   i(className := "material-icons")("add")
 ).material
