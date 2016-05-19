@@ -11,6 +11,7 @@ jsDependencies += RuntimeDOM
 
 libraryDependencies += "com.github.japgolly.scalajs-react" %%% "core" % "0.11.0"
 jsDependencies += "org.webjars.bower" % "react" % "15.0.1" / "react-with-addons.js" minified "react-with-addons.min.js" commonJSName "React"
+jsDependencies += "org.webjars.bower" % "react" % "15.0.1" / "react-dom.js" minified "react-dom.min.js" dependsOn "react-with-addons.js" commonJSName "ReactDOM"
 
 lazy val root = project.in(file("."))
 lazy val examples = project.settings(
