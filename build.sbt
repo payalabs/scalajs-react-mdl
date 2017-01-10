@@ -5,7 +5,9 @@ name := "scalajs-react-mdl"
 
 version := "0.2.0-SNAPSHOT"
 
-scalaVersion := "2.11.8"
+scalaVersion in ThisBuild := "2.12.1"
+
+crossScalaVersions in ThisBuild := Seq("2.11.8", "2.12.1")
 
 jsDependencies += RuntimeDOM
 
@@ -16,8 +18,7 @@ jsDependencies += "org.webjars.bower" % "react" % "15.0.1" / "react-dom.js" mini
 lazy val root = project.in(file("."))
 lazy val examples = project.settings(
   persistLauncher in Compile := true,
-  skip in packageJSDependencies := false,
-  scalaVersion := "2.11.8"
+  skip in packageJSDependencies := false
 ).dependsOn(root).enablePlugins(ScalaJSPlugin)
 
 import com.typesafe.sbt.SbtSite.SiteKeys._
